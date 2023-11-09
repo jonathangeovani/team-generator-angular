@@ -30,7 +30,7 @@
       >Generate</button>
     </div>
 
-    <p class="error-msg">{{ errorMessage }}</p>
+    <p *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</p>
   </div>
 
   <div *ngIf="teams.length > 0" class="teams-container">
